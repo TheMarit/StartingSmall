@@ -1,14 +1,13 @@
+@media screen and (max-width: 600px) {
+ 
 a#menu svg {
         width: 40px;
-        fill: #000;
+        fill: #a9a9a9;
       }
 #menu {
   float: right;
-  margin: 0.5em 0.25em;
-}
-
-#drawer {
-
+  margin: 20px 0 0 0;
+  max-width: 15%
 }
 
 nav {
@@ -25,6 +24,54 @@ nav {
 nav.open {
   -webkit-transform: translate(0, 0);
   transform: translate(0, 0);
+}
+
+.nav__item {
+  width: 100%;
+  }
+
+.header__logo {
+  width: 55px;
+  vertical-align: top;
+  margin: 12px;
+}
+
+.header__title {
+  font-weight: 300;
+  font-size: 4vh;
+  margin: 30px 0 0 0;
+  display: inline-block;
+  color: #212121;
+  max-width: 70%;
+}
+
+}
+@media screen and (min-width: 601px) {
+ .nav {
+  width: 800px;
+  }
+  .nav__item {
+    width: 24%;
+  }
+  #menu {
+    display: none;
+  }
+
+.header__logo {
+  height: 72px;
+  margin-right: 1em;
+  vertical-align: top;
+  margin-top: 12px;
+}
+
+.header__title {
+  font-weight: 300;
+  font-size: 4em;
+  margin: 0.5em 0.25em;
+  display: inline-block;
+  color: #212121;
+}
+
 }
 
 body, html {
@@ -97,20 +144,9 @@ nav, a, button {
   max-width: 100%;
 }
 
-.header__logo {
-  height: 72px;
-  margin-right: 1em;
-  vertical-align: top;
-  margin-top: 12px;
-}
 
-.header__title {
-  font-weight: 300;
-  font-size: 4em;
-  margin: 0.5em 0.25em;
-  display: inline-block;
-  color: #212121;
-}
+
+
 
 
 /*
@@ -134,7 +170,6 @@ nav, a, button {
 .nav__item {
   box-sizing: border-box;
   display: inline-block;
-  width: 100%;
   text-align: center;
   line-height: 24px;
   padding: 24px;
